@@ -19,7 +19,7 @@ namespace AbstractFactory {
                     return;
             }
 
-            var menu = factory.Create() as FoodMenu ?? throw new ArgumentNullException(nameof(factory));
+            var menu = factory.CreateMenu() as FoodMenu ?? throw new ArgumentNullException(nameof(factory));
 
             Console.WriteLine("\nHere is your order:\n" +
                               $"Sandwitch: {menu.Sandwitch.GetName()}\n" +
