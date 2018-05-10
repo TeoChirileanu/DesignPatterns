@@ -21,14 +21,12 @@ namespace FactoryMethod {
             }
 
             Console.WriteLine(
-                $"\nHere is your {sandwitch.GetName()}. JFYI, here is the list of the ingredients it's made up from:\n{sandwitch.GetIngredients()}");
+                $"\nHere is your {sandwitch.Name}. JFYI, here is the list of the ingredients it's made up from:\n{sandwitch.Ingredients}");
         }
     }
 
     internal class TurkeySandwitch : Sandwitch {
-        public override string GetName() {
-            return "Turkish Turkey Sandwitch";
-        }
+        public override string Name => "Turkish Turkey Sandwitch";
 
         protected override void CreateIngredients() {
             Ingredients.AddRange(new Ingredient[] {
@@ -42,9 +40,7 @@ namespace FactoryMethod {
     }
 
     internal class BeefSandwitch : Sandwitch {
-        public override string GetName() {
-            return "Beefy Beef Sandwitch";
-        }
+        public override string Name => "Beefy Beef Sandiwitch";
 
         protected override void CreateIngredients() {
             Ingredients.AddRange(new Ingredient[] {
@@ -58,9 +54,9 @@ namespace FactoryMethod {
     }
 
     internal interface ISandwitch {
-        string GetName();
+        string Name { get; }
 
-        string GetIngredients();
+        string Ingredients { get; }
     }
 
     internal abstract class Sandwitch : ISandwitch {
@@ -68,13 +64,11 @@ namespace FactoryMethod {
             CreateIngredients();
         }
 
+        public abstract string Name { get; }
+
+        string ISandwitch.Ingredients => string.Join("\n", Ingredients.Select(ingredient => ingredient.Name));
+
         protected List<Ingredient> Ingredients { get; } = new List<Ingredient>();
-
-        public abstract string GetName();
-
-        public virtual string GetIngredients() {
-            return string.Join("\n", Ingredients.Select(ingredient => ingredient.Name));
-        }
 
         protected abstract void CreateIngredients();
     }
