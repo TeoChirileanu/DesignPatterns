@@ -8,14 +8,12 @@ namespace FactoryMethod {
             CreateIngredients();
         }
 
+        protected List<IIgredient> Ingredients { get; } = new List<IIgredient>();
+
         public abstract string Name { get; }
 
         string ISandwitch.Ingredients => string.Join("\n", Ingredients.Select(ingredient => ingredient.Name));
 
-        protected List<IIgredient> Ingredients { get; } = new List<IIgredient>();
-
         protected abstract void CreateIngredients();
     }
-
-
 }

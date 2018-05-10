@@ -1,5 +1,5 @@
 ﻿namespace AbstractFactory.Factories {
-    internal  interface IMenuFactory  {
+    internal interface IMenuFactory {
         IMenu CreateMenu();
     }
 }

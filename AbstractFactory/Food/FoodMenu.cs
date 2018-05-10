@@ -1,8 +1,10 @@
 ﻿namespace AbstractFactory {
-    internal class FoodMenu : IMenu{
+    internal class FoodMenu : IMenu {
         public IFood Sandwitch { get; set; }
         public IFood Dessert { get; set; }
 
-        public string GetName() => "Food Menu";
+        public string GetName() {
+            return "Food Menu";
+        }
     }
 }
