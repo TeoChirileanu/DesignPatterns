@@ -15,7 +15,7 @@ namespace FactoryMethod {
                     sandwitch = new TurkeySandwitch();
                     break;
                 default:
-                    Console.WriteLine("Wrong input");
+                    Console.WriteLine("\nWrong input");
                     return;
             }
 
