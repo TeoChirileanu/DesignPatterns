@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Visitor\Visitor.csproj", "{409A8431-7EE4-40A2-B0CC-7CDECD0EF87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodVisitor", "FoodVisitor\FoodVisitor.csproj", "{EE124228-D82B-416C-9301-0E8D44E991BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodVisitor", "FoodVisitor\FoodVisitor.csproj", "{EE124228-D82B-416C-9301-0E8D44E991BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{AA92C4F8-47BC-433E-93E5-48B913FE4CED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EE124228-D82B-416C-9301-0E8D44E991BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE124228-D82B-416C-9301-0E8D44E991BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE124228-D82B-416C-9301-0E8D44E991BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA92C4F8-47BC-433E-93E5-48B913FE4CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA92C4F8-47BC-433E-93E5-48B913FE4CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA92C4F8-47BC-433E-93E5-48B913FE4CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA92C4F8-47BC-433E-93E5-48B913FE4CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
