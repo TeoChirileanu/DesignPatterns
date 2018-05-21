@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Numerics;
 using System.Text;
 using Visitor.Interfaces;
 
 namespace Visitor.Employees {
     internal class Employees {
+        // ReSharper disable once InconsistentNaming
         private static List<Employee> _employees { get; set; }
 
         internal Employees() {
@@ -31,6 +31,7 @@ namespace Visitor.Employees {
         public static void UpdateEmployee(Employee updatedEmployee) {
             var employeeToUpdate = _employees.FirstOrDefault(e => e.Name == updatedEmployee.Name);
             if (employeeToUpdate is null) throw new ArgumentException($"No employee with name {updatedEmployee.Name} found!");
+            // ReSharper disable once RedundantAssignment
             employeeToUpdate = updatedEmployee;
         }
 

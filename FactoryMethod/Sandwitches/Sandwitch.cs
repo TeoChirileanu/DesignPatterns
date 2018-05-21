@@ -2,7 +2,7 @@
 using System.Linq;
 using FactoryMethod.Interfaces;
 
-namespace FactoryMethod {
+namespace FactoryMethod.Sandwitches {
     internal abstract class Sandwitch : ISandwitch {
         protected Sandwitch() {
             CreateIngredients();

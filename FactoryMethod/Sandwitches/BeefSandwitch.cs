@@ -1,7 +1,7 @@
 ﻿using FactoryMethod.Ingredients;
 using FactoryMethod.Interfaces;
 
-namespace FactoryMethod {
+namespace FactoryMethod.Sandwitches {
     internal class BeefSandwitch : Sandwitch {
         public override string Name => "Beefy Beef Sandiwitch";
 
