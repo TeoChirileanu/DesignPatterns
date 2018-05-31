@@ -1,4 +1,7 @@
 ﻿using System;
+using FoodVisitor.F00d;
+using FoodVisitor.Interfaces;
+using FoodVisitor.Visitors;
 
 namespace FoodVisitor {
     internal static class Program {
