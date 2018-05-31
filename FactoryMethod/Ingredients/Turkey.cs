@@ -1,6 +1,6 @@
 ﻿using FactoryMethod.Interfaces;
 
-namespace FactoryMethod.Sandwitches {
+namespace FactoryMethod.Ingredients {
     internal class Turkey : IIgredient {
         public string Name => "Roasted Turkey";
     }
