@@ -1,5 +1,5 @@
-﻿using FoodVisitor.Interfaces;
-using FoodVisitor.F00d.Ingredients;
+﻿using FoodVisitor.F00d.Ingredients;
+using FoodVisitor.Interfaces;
 
 namespace FoodVisitor.Visitors {
     internal abstract class Visitor : IVisitor {
