@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{52F8A5D5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoNeedForFoodVisitor.Tests", "NoNeedForFoodVisitor.Tests\NoNeedForFoodVisitor.Tests.csproj", "{81C8DDC4-39B4-440A-87AC-7B04E7B9FAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{C9E4AA73-D81E-4280-9A36-F0DE6E8378A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{C9E4AA73-D81E-4280-9A36-F0DE6E8378A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{4D1A410C-E735-49BF-969D-C5BF9EE5C2E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{C9E4AA73-D81E-4280-9A36-F0DE6E8378A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E4AA73-D81E-4280-9A36-F0DE6E8378A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E4AA73-D81E-4280-9A36-F0DE6E8378A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1A410C-E735-49BF-969D-C5BF9EE5C2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1A410C-E735-49BF-969D-C5BF9EE5C2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1A410C-E735-49BF-969D-C5BF9EE5C2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1A410C-E735-49BF-969D-C5BF9EE5C2E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
