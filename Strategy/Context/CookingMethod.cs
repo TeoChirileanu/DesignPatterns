@@ -13,8 +13,8 @@ namespace Strategy.Context {
         public void FindAppropriateCookingMethod(string food) {
             FoodToPrepare = food;
 
-            // determine the right way to cook the desired food by examining it's "maginal number"
-            var magicNumber = food.Length * food.Length * Math.E - food.Length * Math.PI;
+            // determine the right way to cook the desired food by examining it's "magical number"
+            double magicNumber = food.Length * food.Length * Math.E - food.Length * Math.PI;
             if (magicNumber < 100) CookingStrategy = CookingStrategies.Strategies[0];
             else if (magicNumber < 200) CookingStrategy = CookingStrategies.Strategies[1];
             else CookingStrategy = CookingStrategies.Strategies[2];
